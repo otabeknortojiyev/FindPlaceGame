@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv1"
+        style="@style/imageStyle"
+        android:src="@drawable/frog"
+        app:layout_constraintBottom_toTopOf="@id/iv4"
+        app:layout_constraintEnd_toStartOf="@id/iv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gl2" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        style="@style/imageStyle"
+        android:src="@drawable/dog"
+        app:layout_constraintBottom_toTopOf="@id/iv5"
+        app:layout_constraintEnd_toStartOf="@id/iv3"
+        app:layout_constraintStart_toEndOf="@id/iv1"
+        app:layout_constraintTop_toTopOf="@id/gl2" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        style="@style/imageStyle"
+        android:src="@drawable/cobra"
+        app:layout_constraintBottom_toTopOf="@id/iv6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv2"
+        app:layout_constraintTop_toTopOf="@id/gl2" />
+
+    <ImageView
+        android:id="@+id/iv4"
+        style="@style/imageStyle"
+        android:src="@drawable/cat"
+        app:layout_constraintBottom_toTopOf="@id/iv7"
+        app:layout_constraintEnd_toStartOf="@id/iv5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv1" />
+
+    <ImageView
+        android:id="@+id/iv5"
+        style="@style/imageStyle"
+        android:src="@drawable/bear"
+        app:layout_constraintBottom_toTopOf="@id/iv8"
+        app:layout_constraintEnd_toStartOf="@id/iv6"
+        app:layout_constraintStart_toEndOf="@id/iv4"
+        app:layout_constraintTop_toBottomOf="@id/iv2" />
+
+    <ImageView
+        android:id="@+id/iv6"
+        style="@style/imageStyle"
+        android:src="@drawable/giraffe"
+        app:layout_constraintBottom_toTopOf="@id/iv9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv5"
+        app:layout_constraintTop_toBottomOf="@id/iv3" />
+
+    <ImageView
+        android:id="@+id/iv7"
+        style="@style/imageStyle"
+        android:src="@drawable/lion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv4" />
+
+    <ImageView
+        android:id="@+id/iv8"
+        style="@style/imageStyle"
+        android:src="@drawable/wolf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv9"
+        app:layout_constraintStart_toEndOf="@id/iv7"
+        app:layout_constraintTop_toBottomOf="@id/iv5" />
+
+    <ImageView
+        android:id="@+id/iv9"
+        style="@style/imageStyle"
+        android:src="@drawable/parrot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv8"
+        app:layout_constraintTop_toBottomOf="@id/iv6" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <ImageView
+        android:id="@+id/iv_holder1"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toTopOf="@id/iv_holder4"
+        app:layout_constraintEnd_toStartOf="@id/iv_holder2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_holder2"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toTopOf="@id/iv_holder5"
+        app:layout_constraintEnd_toStartOf="@id/iv_holder3"
+        app:layout_constraintStart_toEndOf="@id/iv_holder1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_holder3"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toTopOf="@id/iv_holder6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_holder2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_holder4"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toTopOf="@id/iv_holder7"
+        app:layout_constraintEnd_toStartOf="@id/iv_holder5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_holder1" />
+
+    <ImageView
+        android:id="@+id/iv_holder5"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toTopOf="@id/iv_holder8"
+        app:layout_constraintEnd_toStartOf="@id/iv_holder6"
+        app:layout_constraintStart_toEndOf="@id/iv_holder4"
+        app:layout_constraintTop_toBottomOf="@id/iv_holder2" />
+
+    <ImageView
+        android:id="@+id/iv_holder6"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toTopOf="@id/iv_holder9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_holder5"
+        app:layout_constraintTop_toBottomOf="@id/iv_holder3" />
+
+    <ImageView
+        android:id="@+id/iv_holder7"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toBottomOf="@id/gl1"
+        app:layout_constraintEnd_toStartOf="@id/iv_holder8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_holder4" />
+
+    <ImageView
+        android:id="@+id/iv_holder8"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toBottomOf="@id/gl1"
+        app:layout_constraintEnd_toStartOf="@id/iv_holder9"
+        app:layout_constraintStart_toEndOf="@id/iv_holder7"
+        app:layout_constraintTop_toBottomOf="@id/iv_holder5" />
+
+    <ImageView
+        android:id="@+id/iv_holder9"
+        style="@style/holderStyle"
+        app:layout_constraintBottom_toBottomOf="@id/gl1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_holder8"
+        app:layout_constraintTop_toBottomOf="@id/iv_holder6" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayiq"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder1"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder1"
+        app:layout_constraintStart_toStartOf="@id/iv_holder1"
+        app:layout_constraintTop_toTopOf="@id/iv_holder1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mushuk"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder2"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder2"
+        app:layout_constraintStart_toStartOf="@id/iv_holder2"
+        app:layout_constraintTop_toTopOf="@id/iv_holder2" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ilon"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder3"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder3"
+        app:layout_constraintStart_toStartOf="@id/iv_holder3"
+        app:layout_constraintTop_toTopOf="@id/iv_holder3" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder4"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder4"
+        app:layout_constraintStart_toStartOf="@id/iv_holder4"
+        app:layout_constraintTop_toTopOf="@id/iv_holder4" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qurbaqa"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder5"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder5"
+        app:layout_constraintStart_toStartOf="@id/iv_holder5"
+        app:layout_constraintTop_toTopOf="@id/iv_holder5" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jiraf"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder6"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder6"
+        app:layout_constraintStart_toStartOf="@id/iv_holder6"
+        app:layout_constraintTop_toTopOf="@id/iv_holder6" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sher"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder7"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder7"
+        app:layout_constraintStart_toStartOf="@id/iv_holder7"
+        app:layout_constraintTop_toTopOf="@id/iv_holder7" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To'tiqush"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder8"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder8"
+        app:layout_constraintStart_toStartOf="@id/iv_holder8"
+        app:layout_constraintTop_toTopOf="@id/iv_holder8" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bo'ri"
+        app:layout_constraintBottom_toBottomOf="@id/iv_holder9"
+        app:layout_constraintEnd_toEndOf="@id/iv_holder9"
+        app:layout_constraintStart_toStartOf="@id/iv_holder9"
+        app:layout_constraintTop_toTopOf="@id/iv_holder9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <TextView
+        android:id="@+id/tvMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pastdan tepaga mos hayvonlarni joylashtiring"
+        app:layout_constraintBottom_toTopOf="@id/gl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
